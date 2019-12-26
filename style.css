@@ -45,3 +45,12 @@ p {
   font-size: xx-large;
   color: rgb(0, 0, 0, 0.6);
 }
+
+.new {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+  color: rgb(0, 0, 0, 0.6);
+}
