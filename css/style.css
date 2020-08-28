@@ -1,0 +1,93 @@
+:root {
+  /** Definição de variaveis para cores */
+  --backGroundColor: #dddddd;
+  --colorText: #000000;
+  --borderColor: #000000;
+}
+
+* {
+  /*Estilos gerais*/
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: var(--backGroundColor);
+  color: var(--colorText);
+  word-wrap: break-word;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.profile-icon {
+  height: 250px;
+  width: 250px;
+  border: 2px solid #000000;
+  border-radius: 15%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.main-content {
+  border: .5px solid var(--borderColor);
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 10px;
+  min-width: 320px;
+}
+
+.fa {
+  font-size: 20px;
+  margin-right: 3px;
+}
+
+.fa-mobile {
+  font-size: 35px;
+}
+
+.fa-mobile, .fa-globe, .fa-whatsapp {
+  margin-right: 6px;
+}
+
+.contact-item {
+  margin-bottom: 5px;
+  text-decoration-line: underline;
+}
+
+.knowledge-item {
+  margin-bottom: 4px;
+  text-decoration-line: underline;
+}
+
+.formation-item {
+  margin-bottom: 7px;
+}
+
+.experience-item-internal {
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: -35px;
+  margin-bottom: 7px;
+}
+
+.experience-item {
+  margin-bottom: 15px;
+}
+
+.projects-item {
+  margin-bottom: 5px;
+}
+
+.fa-code {
+  font-size: 22px;
+}
+
+.container {
+  margin: 5px;
+}
+
+@media (max-width: 700px) {
+  html {
+    font-size: 115%;
+    font-weight: 500;
+  }
+}
