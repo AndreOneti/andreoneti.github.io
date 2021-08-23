@@ -1,0 +1,22 @@
+:root {
+  --color-select: #9147ff;
+
+  --color-white-first: #ffffff;
+  --color-white-second: #dad3d3;
+
+  --color-black-first: #000000;
+  --color-black-second: #171717;
+  --color-black-third:#ffffff40;
+  --color-black-fourth:#222;
+
+  --color-bg-first: #2c3e50;
+  --color-bg-second: #48627b;
+  --color-bg-black-first: #444444;
+  --color-bg-black-second: #635F5F;
+  --color-bg-black-third: #171717BF;
+
+  --color-download-cv: #43D8C9;
+  --color-download-cv-shadow: #43D8C940;
+
+  --color-purple: #8E44AD;
+}

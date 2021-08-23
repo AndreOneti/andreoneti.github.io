@@ -1,0 +1,88 @@
+@media (max-width: 750px) {
+  .nickname {
+    font-size: 14px !important;
+  }
+  .copyright {
+    font-size: 8px;
+  }
+
+  /** Navigation */
+
+  .header .navigation {
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    background-color: var(--color-bg-black-third);
+    width: 100%;
+    border-top: 5px solid var(--color-black-fourth);
+    overflow: hidden;
+    max-height: 0px;
+    transition: all 300ms linear;
+  }
+
+  .header .navigation a,
+  .header .navigation a.btn-download-cv {
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 20px;
+  }
+
+  .header .mobal-menu {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 40px;
+    border: 1px solid var(--color-white-first);
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC")
+        14 0,
+      pointer;
+  }
+
+  .header .mobal-menu span {
+    display: block;
+    position: absolute;
+    left: 50%;
+    width: 75%;
+    height: 4px;
+    background-color: var(--color-white-first);
+    transform: translate(-50%, -50%);
+    cursor: inherit;
+    transition: all 300ms linear;
+  }
+
+  .header .mobal-menu span:nth-child(1) {
+    top: 20%;
+  }
+
+  .header .mobal-menu span:nth-child(2) {
+    top: 50%;
+  }
+
+  .header .mobal-menu span:nth-child(3) {
+    top: 80%;
+  }
+
+  .header.--active .navigation {
+    max-height: 500px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .header.--active .mobal-menu span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .header.--active .mobal-menu span:nth-child(2) {
+    display: none;
+  }
+
+  .header.--active .mobal-menu span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}

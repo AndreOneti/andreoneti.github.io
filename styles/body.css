@@ -1,0 +1,222 @@
+.body {
+  height: 100%;
+  width: 100%;
+  margin-top: 105px;
+}
+
+.body .section-title {
+  display: block;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 1.6rem;
+  text-decoration: underline double;
+}
+
+/** START INFO */
+#info {
+  width: 100%;
+  height: 800px;
+  background-image: url("../assets/img/me-and-soon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 84%;
+  border-bottom: 5px solid var(--color-black-first);
+}
+
+#info .bg {
+  position: absolute;
+  width: 717px;
+  height: 230px;
+  left: 50px;
+  top: 350px;
+  background-color: var(--color-white-first);
+  box-shadow: 4px 4px 0px var(--color-black-first);
+  filter: blur(40px);
+}
+
+#info .text {
+  position: relative;
+  width: 717px;
+  height: 230px;
+  left: 40px;
+  top: 350px;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--color-black-first);
+}
+/** END INFO */
+
+/** START ABOUT */
+#sobre .main{
+  width: 100%;
+  height: 480px;
+  border-bottom: 5px solid var(--color-black-first);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#sobre img {
+  height: 315px;
+  width: 307px;
+  margin-left: 150px;
+}
+
+#sobre .container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#sobre .text {
+  margin-left: 50px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 70px;
+  text-shadow: 3px 3px 0px var(--color-black-first);
+}
+
+#sobre .sub {
+  margin-left: 50px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 5px;
+  text-shadow: 3px 3px 0px var(--color-black-first);
+}
+/** END ABOUT */
+
+/** START PROJECTS */
+#projetos {
+  width: 100%;
+  border-bottom: 5px solid var(--color-black-first);
+}
+
+#projetos ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#projetos li {
+  list-style: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#projetos .container {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  border: 2px solid var(--color-black-second);
+  border-radius: 15px;
+  height: 100%;
+  margin: 0px 5px;
+  padding-left: 15px;
+  color: var(--color-white-first);
+  background-color: var(--color-bg-second);
+  cursor: inherit;
+  justify-content: space-between;
+}
+
+#projetos .container .project-item {
+  display: flex;
+  margin: 2px;
+  padding: 10px;
+  align-items: center;
+  gap: 15px;
+  cursor: inherit;
+}
+
+#projetos .container .project-item img {
+  cursor: inherit;
+}
+
+#projetos .container a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 96px;
+  cursor: inherit;
+}
+
+#projetos .container .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#projetos .container .description,
+#projetos .container .description span {
+  color: inherit;
+  cursor: inherit;
+}
+
+#projetos .container .description span {
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--color-white-second);
+}
+
+#projetos .container .description span.sub-description {
+  font-size: 0.8rem;
+  margin: 10px 0px;
+  color: var(--color-white-second);
+  text-decoration: underline;
+}
+
+#projetos .container .description span.sub-description::before {
+  content: "- ";
+}
+/** END PROJECTS */
+
+/** START SKILLS */
+#skills {
+  width: 100%;
+  border-bottom: 5px solid var(--color-black-first);
+}
+
+#skills .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: baseline;
+  align-items: center;
+}
+
+#skills .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#skills .item img {
+  height: 95px;
+  width: 95px;
+  border-radius: 25px;
+  border: 2px solid var(--color-black-first);
+  background-color: var(--color-white-second);
+  margin: 5px;
+  padding: 2px;
+}
+
+#skills .lvl {
+  background-color: var(--color-white-second);
+  border: 2px solid var(--color-black-first);
+  border-radius: 15px;
+  width: 200px;
+  height: 25px;
+}
+
+#skills .lvl .percent {
+  border-radius: 15px;
+  height: 25px;
+  background-color: var(--color-purple);
+}
+/** END SKILLS */
