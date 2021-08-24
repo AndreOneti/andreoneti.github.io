@@ -1,13 +1,6 @@
-@media (max-width: 750px) {
-  .nickname {
-    font-size: 14px !important;
-  }
-  .copyright {
-    font-size: 8px;
-  }
-
-  /** Navigation */
-
+/** desktop -  */
+@media (max-width: 1050px) {
+  /** HEADER */
   .header .navigation {
     flex-direction: column;
     position: absolute;
@@ -84,5 +77,133 @@
   .header.--active .mobal-menu span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  /** INFO */
+  #info .bg {
+    position: absolute;
+    width: 500px;
+    height: 230px;
+    left: 50px;
+    top: 350px;
+    background-color: var(--color-white-first);
+    box-shadow: 4px 4px 0px var(--color-black-first);
+    filter: blur(40px);
+  }
+
+  #info .text {
+    position: relative;
+    width: 500px;
+    height: 230px;
+    left: 40px;
+    top: 350px;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-black-first);
+  }
+
+  #info .text .title {
+    font-size: 0.95rem;
+  }
+
+  /** ABOUT  */
+  #sobre .main img {
+    margin-left: 90px;
+  }
+
+  #sobre .main .container {
+    margin-right: 90px;
+  }
+
+  /** SKILLS */
+  #skills .container {
+    justify-content: center;
+  }
+}
+
+/** tablet/laptop */
+@media (max-width: 768px) {
+  /** INFO */
+  #info .bg {
+    top: 650px;
+  }
+
+  #info .text {
+    top: 650px;
+  }
+
+  /** SKILLS */
+  #skills .container {
+    justify-content: left;
+    margin-left: 25px;
+  }
+}
+
+/** phone */
+@media (max-width: 480px) {
+  /** HEADER */
+  .header .logo .nickname {
+    font-size: 1rem;
+  }
+  /** INFO */
+  #info .bg {
+    width: 100%;
+    left: 0px;
+  }
+
+  #info .text {
+    width: 100%;
+    left: 0px;
+  }
+
+  /** SKILLS */
+  #skills .container {
+    justify-content: left;
+    margin-left: 5px;
+  }
+
+  /** ABOUT  */
+  #sobre .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sobre .main img {
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  #sobre .main .container {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  #sobre .main .container span {
+    margin-left: 0px;
+  }
+
+  /** PROJECTS */
+  #projetos ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #projetos li,
+  #projetos .container {
+    width: 100% !important;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  #projetos .container .project-item {
+    margin: 0px;
+    font-size: 0.75rem;
+  }
+
+  #projetos .container .description span {
+    font-size: 0.65rem;
   }
 }

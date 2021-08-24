@@ -94,7 +94,6 @@ const skillsList = [
 ]
 
 const menuItems = document.querySelectorAll('.navigation a[href^="#"]');
-const projects = document.querySelectorAll('li.clickable[data-href]');
 
 function handleMenuItemClicked(event) {
   scrollToIdOnClick(event);
@@ -120,36 +119,33 @@ menuItems.forEach(item => {
 });
 
 
-projects.forEach(item => {
-  item.addEventListener('click', handleProjectClicked);
-});
-
 document
   .querySelector('#projetos ul')
   .insertAdjacentHTML(
-    'beforeend', projectList.map(({ url, img, alt, name, description, sub_description }) => (/*html*/`
-<li
-  class="clickable"
-  data-href="${url}"
-  onclick="handleProjectClicked(event)"
->
-  <div class="container">
-    <div class="project-item">
-      <img
-        src="${img}"
-        alt="${alt}"
-      />
-      <a>${name}</a>
-    </div>
-    <div class="description">
-      <span>
-       ${description}
-      </span>
-      <span class="sub-description">${sub_description}</span>
-    </div>
-  </div>
-</li>
-`)).join('')
+    'beforeend',
+    projectList.map(project => (/*html*/`
+      <li
+        class="clickable"
+        data-href="${project.url}"
+        onclick="handleProjectClicked(event)"
+      >
+        <div class="container">
+          <div class="project-item">
+            <img
+              src="${project.img}"
+              alt="${project.alt}"
+            />
+            <a>${project.name}</a>
+          </div>
+          <div class="description">
+            <span>
+            ${project.description}
+            </span>
+            <span class="sub-description">${project.sub_description}</span>
+          </div>
+        </div>
+      </li>
+    `)).join('')
   );
 
 document

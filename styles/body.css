@@ -49,9 +49,9 @@
 /** END INFO */
 
 /** START ABOUT */
-#sobre .main{
+#sobre .main {
   width: 100%;
-  height: 480px;
+  min-height: 480px;
   border-bottom: 5px solid var(--color-black-first);
   display: flex;
   justify-content: space-around;
@@ -184,8 +184,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: baseline;
   align-items: center;
+  margin-left: 100px;
 }
 
 #skills .item {
