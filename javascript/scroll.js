@@ -15,7 +15,7 @@ function scrollToIdOnClick(event) {
  * @param {int} endY: destination y coordinate
  * @param {int} duration: animation duration in ms
  */
-function smoothScrollTo(endX, endY, duration) {
+ export function smoothScrollTo(endX, endY, duration) {
   const startX = window.scrollX || window.pageXOffset;
   const startY = window.scrollY || window.pageYOffset;
   const distanceX = endX - startX;

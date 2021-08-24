@@ -1,6 +1,8 @@
-import scrollToIdOnClick from './scroll.js';
+import scrollToIdOnClick, { smoothScrollTo } from './scroll.js';
 import './t-writer.js';
 import './tooltip.js';
+import './context-menu.js';
+
 const Typewriter = window['t-writer'];
 
 const projectList = [
@@ -34,61 +36,73 @@ const skillsList = [
   {
     percent: 70,
     alt: "JavaScript",
+    target: "https://developer.mozilla.org/en-US/docs/Web/javascript",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"
   },
   {
     percent: 60,
     alt: "TypeScript",
+    target: "https://www.typescriptlang.org/",
     url: "https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/typescript/typescript-original.svg"
   },
   {
     percent: 90,
     alt: "NodeJs",
+    target: "https://nodejs.org/en/",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg"
   },
   {
     percent: 90,
     alt: "Express",
+    target: "https://expressjs.com/",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg"
   },
   {
     percent: 75,
     alt: "HTML",
+    target: "https://developer.mozilla.org/pt-BR/docs/Web/HTML",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg"
   },
   {
     percent: 60,
     alt: "CSS",
+    target: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg"
   },
   {
     percent: 85,
     alt: "Angular",
+    target: "https://angular.io/",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg"
   },
   {
     percent: 80,
     alt: "Bash",
+    target: "https://aurelio.net/shell/canivete/",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/bash/bash-original.svg"
   },
   {
     percent: 80,
     alt: "Docker",
+    target: "https://www.docker.com/",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg"
   },
   {
     percent: 90,
     alt: "Mongo Db",
+    target: "https://www.mongodb.com/pt-br",
     url: "https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/mongodb/mongodb-original.svg"
   },
   {
     percent: 50,
     alt: "MYSQL",
+    target: "https://www.mysql.com/",
     url: "https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/mysql/mysql-original.svg"
   },
   {
     percent: 55,
     alt: "POSTGRESQL",
+    target: "https://www.postgresql.org/",
     url: "https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/postgresql/postgresql-original.svg"
   }
 ]
@@ -117,6 +131,12 @@ document.querySelector('.header .mobal-menu').addEventListener('click', function
 menuItems.forEach(item => {
   item.addEventListener('click', handleMenuItemClicked);
 });
+
+document
+  .querySelector('.top')
+  .addEventListener('click', () => {
+    smoothScrollTo(0, 0);
+  })
 
 
 document
@@ -151,7 +171,7 @@ document
 document
   .querySelector('#skills .container')
   .insertAdjacentHTML('beforeend', skillsList.map(skill =>/*html*/`
-    <div class="item" data-tooltip="${skill.alt} - ${skill.percent}%" >
+    <div class="item" data-href="${skill.target}" data-tooltip="${skill.alt} - ${skill.percent}%" >
       <img
         alt="${skill.alt}"
         src="${skill.url}"

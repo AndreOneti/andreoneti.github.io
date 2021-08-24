@@ -206,4 +206,10 @@
   #projetos .container .description span {
     font-size: 0.65rem;
   }
+
+  .top,
+  .top img {
+    height: 25px;
+    width: 25px;
+  }
 }
