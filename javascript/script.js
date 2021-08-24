@@ -23,9 +23,9 @@ const projectList = [
   {
     url: "https://github.com/AndreOneti/andreoneti.github.io",
     img: "assets/img/Avatar-mini-logo.png",
-    alt: "Portifólio logo",
-    name: "Portifólio",
-    description: "Portifólio feito inteiramente em HTML, CSS e JAVASCRIPT.",
+    alt: "Portfólio logo",
+    name: "Portfólio",
+    description: "Portfólio feito inteiramente em HTML, CSS e JAVASCRIPT.",
     sub_description: "Creator"
   }
 ];
