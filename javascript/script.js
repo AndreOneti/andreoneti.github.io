@@ -11,7 +11,7 @@ const projectList = [
     img: "assets/img/dot_functions_utils-logo.png",
     alt: "dot functions utils logo",
     name: "dot_functions_utils",
-    description: "Biblioteca Node Js para auxiliar na manipulações da Date, String, Number and Arrays.",
+    description: "Biblioteca Node Js para auxiliar na manipulação de Date, String, Number e Arrays.",
     sub_description: "Creator"
   },
   {
