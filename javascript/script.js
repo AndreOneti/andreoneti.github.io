@@ -29,6 +29,14 @@ const projectList = [
     name: "Portfólio",
     description: "Portfólio feito inteiramente em HTML, CSS e JAVASCRIPT.",
     sub_description: "Creator"
+  },
+  {
+    url: "https://github.com/AndreOneti/qml-formatter",
+    img: "assets/img/qml-logo.png",
+    alt: "QML logo",
+    name: "QML Formatter",
+    description: "Formatador simples para qml, integrado com goToDefinition e autocomplete.",
+    sub_description: "Creator"
   }
 ];
 
@@ -104,6 +112,24 @@ const skillsList = [
     alt: "POSTGRESQL",
     target: "https://www.postgresql.org/",
     url: "https://raw.githubusercontent.com/devicons/devicon/00f02ef57fb7601fd1ddcc2fe6fe670fef3ae3e4/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    percent: 60,
+    alt: "QT/QML",
+    target: "https://www.qt.io/",
+    url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/qt/qt-original.svg"
+  },
+  {
+    percent: 60,
+    alt: "C#",
+    target: "https://docs.microsoft.com/en-us/dotnet/csharp/",
+    url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"
+  },
+  {
+    percent: 60,
+    alt: "C++",
+    target: "https://docs.microsoft.com/en-us/cpp/?view=msvc-170",
+    url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
   }
 ]
 
@@ -135,6 +161,8 @@ menuItems.forEach(item => {
 document
   .querySelector('.top')
   .addEventListener('click', () => {
+    document.querySelector('nav a.--active').classList.remove('--active');
+    document.querySelector('nav a').classList.add('--active');
     smoothScrollTo(0, 0);
   })
 
