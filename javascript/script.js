@@ -130,6 +130,18 @@ const skillsList = [
     alt: "C++",
     target: "https://docs.microsoft.com/en-us/cpp/?view=msvc-170",
     url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg"
+  },
+  {
+    percent: 50,
+    alt: "Python",
+    target: "https://docs.python.org/3/",
+    url: "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg"
+  },
+  {
+    percent: 50,
+    alt: "Rabbit MQ",
+    target: "https://www.rabbitmq.com/",
+    url: "assets/img/rabbitmq-logo.svg"
   }
 ]
 
